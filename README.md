@@ -1,76 +1,87 @@
-# CS50 Project 0 - Google Search
+# CS50 Project 0 – Google Search
 
-Custom design made for CS50's Web Programming with Python and JavaScript course, which is a simple clone of Google Search, Google Image, and Google Advanced Search pages consisting of HTML, CSS, JS, and external code provided using CDN.
+This is a clone of Google's core search interfaces: Standard Search, Image Search, and Advanced Search. The project was created for CS50’s Web Programming with Python and JavaScript course and implements the required frontend logic using HTML, CSS, and JavaScript, alongside external resources loaded via CDN.
 
-## Demo
+## 🗂️ Project Structure
+The project contains three main HTML pages, each corresponding to a core Google service:
 
-Demo site: [https://cs50-search.niezleziolko.app](https://cs50-search.niezleziolko.app)
+```
+cs50-search/
+├── index.html              # Google Search
+├── image.html              # Google Image Search
+├── advanced.html           # Google Advanced Search
+├── styles.css              # Central stylesheet
+├── script.js               # Optional JavaScript functionality
+└── README.md
+```
 
-A short video where I go through the required specifications of the project: [https://youtu.be/sLuKh2eZEbg](https://youtu.be/sLuKh2eZEbg)
+All pages share a consistent navigation layout and visual design inspired by the original Google interface.
 
----
+## ✅ Features Overview
 
-## Project Requirements
+This section summarizes each feature implemented in the application.
 
-### Website Structure
+### 🔍 Google Search
+  - **Search Input**:
+   - Centered on the page.
+   - Rounded corners for a polished look.
+   - "Google Search" and "I'm Feeling Lucky" buttons placed beneath the search bar.
 
-Your site must include a minimum of three distinct pages:
+  - **Navigation**:
+    - Links to Image Search and Advanced Search are located in the top-right corner.
+  
+  - **Functionality**:
+    - When a user enters a query and clicks "Search", they are redirected to Google’s official search results for that query.
+    - Clicking "I'm Feeling Lucky" redirects the user directly to the top search result.
 
-1. A page dedicated to standard Google Search functionality.
-2. A page for Google Image Search.
-3. A page for Google Advanced Search.
+### 🖼️ Google Image Search
+  - **Image Search Page**:
+    - Provides a similar layout to the standard search page.
+    - Input field and search button are centered.
+    - Upon submitting a query, the user is redirected to the corresponding Google Images results.
 
-The Google Search page should feature navigation links in the upper-right corner that direct users to either the Image Search or Advanced Search pages. Similarly, both the Image Search and Advanced Search pages should provide a link in the same position to return to the main Google Search page.
+  - **Navigation**:
+    - Top-right corner includes a link back to the main search page.
 
----
+### ⚙️ Advanced Search
+  - **Form Fields**:
+    - The page includes labeled input fields for:
+      - All words
+      - Exact phrase
+      - Any of the words
+      - None of the words
+    - Fields are vertically stacked and left-aligned for clarity.
+  
+  - **Search Button**:
+    - A prominently styled "Advanced Search" button (blue background, white text).
+    - On click, redirects to a Google results page based on advanced query parameters.
 
-### Search Functionality
+  - **Navigation**:
+    - Top-right corner includes a link back to the main search page.
 
-1. **Standard Search**:
-   - The Google Search page must allow users to input a search query.
-   - Upon clicking a "Search" button, users should be redirected to the appropriate Google results page.
-   - The search bar should:
-     - Be centered on the page.
-     - Have rounded corners.
-     - Include the search button directly below it.
+### 🧩 Additional Features
+  - **Virtual Keyboard**:
+    - Users can type search queries using an on-screen keyboard for accessibility or convenience.
 
-2. **Image Search**:
-   - The Image Search page should enable users to enter a query and perform a search by clicking a designated button.
-   - This action should redirect users to Google Image results relevant to their query.
+  - **Voice Search**:
+    - Enables voice input through supported browsers using the Web Speech API.
 
-3. **Advanced Search**:
-   - The Advanced Search page must include input fields for the following criteria:
-     - Pages containing **all** specified words.
-     - Pages containing an **exact phrase**.
-     - Pages containing **any** of the specified words.
-     - Pages excluding specified words.
-   - The layout should:
-     - Arrange these input fields vertically.
-     - Left-align the fields.
-   - The "Advanced Search" button should:
-     - Be styled with a blue background and white text.
-     - Redirect users to search results tailored to the provided inputs.
+  - **Google Lens Support**:
+    - Includes a button to upload or link to an image for reverse searching using Google Lens.
+    - Redirects to Google’s visual search interface with the image preloaded.
 
----
+  - **Localization Info**:
+    - Displays the user’s detected country/region on the main search page.
 
-### Additional Features
+## 🚀 Demo
+You can view a working version of the project here:
+👉 `https://search-8dm.pages.dev/`
 
-1. **“I’m Feeling Lucky” Button**:
-   - Include this button on the primary Google Search page.
-   - When clicked, it should bypass the search results page and navigate directly to the first result for the given query.
+Video walkthrough of the specification:
+🎥 `https://youtu.be/sLuKh2eZEbg`
 
-2. **Design Consistency**:
-   - The overall design and style (CSS) of your site should emulate Google's aesthetic as closely as possible, ensuring a familiar user experience.
+## 📜 Certification
+This project was submitted as part of the CS50’s Web Programming with Python and JavaScript course offered by Harvard University.
+Upon successful completion, I was awarded a certificate, which is available here:
 
-3. **Localization**:
-   - Display text indicating the country from which the visit is supported.
-
-4. **Virtual Keyboard**:
-   - Provide a virtual keyboard to type search phrases without using a physical keyboard.
-
-5. **Voice Search**:
-   - Implement voice search functionality, allowing users to input search phrases using their voice.
-
-6. **Google Lens**:
-   - Include a button that allows users to perform a query using an image in the Google Lens service.
-   - Redirect users to the linked image for Google Lens processing.
+🎓 [View Certificate](https://certificates.cs50.io/6f5116d0-882d-4fc1-9dc6-0c96c5d4c7b1.pdf)
