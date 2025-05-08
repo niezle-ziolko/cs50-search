@@ -75,10 +75,10 @@ This section summarizes each feature implemented in the application.
 
 ## 🚀 Demo
 You can view a working version of the project here:
-👉 `https://search-8dm.pages.dev/`
+👉 https://search-8dm.pages.dev/
 
 Video walkthrough of the specification:
-🎥 `https://youtu.be/sLuKh2eZEbg`
+🎥 https://youtu.be/sLuKh2eZEbg
 
 ## 📜 Certification
 This project was submitted as part of the CS50’s Web Programming with Python and JavaScript course offered by Harvard University.
