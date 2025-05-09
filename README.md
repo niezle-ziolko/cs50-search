@@ -7,11 +7,16 @@ The project contains three main HTML pages, each corresponding to a core Google 
 
 ```
 cs50-search/
-├── index.html              # Google Search
-├── image.html              # Google Image Search
+├── static/
+│   └── search/
+│       ├── favicon.ico
+│       ├── logo.svg
+│       ├── script.js       # Optional JavaScript functionality
+│       └── styles.css      # Central stylesheet
 ├── advanced.html           # Google Advanced Search
-├── styles.css              # Central stylesheet
-├── script.js               # Optional JavaScript functionality
+├── images.html             # Google Image Search
+├── index.html              # Google Search
+├── LICENSE
 └── README.md
 ```
 
